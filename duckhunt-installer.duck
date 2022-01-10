@@ -1,0 +1,14 @@
+LOCALE DE
+LED 255 0 0
+GUI r
+DELAY 300
+STRING cmd.exe
+ENTER
+DELAY 1000
+STRING cd "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup" && powershell -Command "Invoke-WebRequest https://github.com/pmsosa/duckhunt/raw/master/builds/duckhunt.0.9.exe -Outfile duckhunt.exe" && duckhunt.exe && exit
+ENTER
+DELAY 300
+
+LED 0 255 0
+DELAY 7000
+LED 0 255 255
